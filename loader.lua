@@ -13,13 +13,16 @@ return(
                     "http",
                     "syn",
                     "loadstring"
-                }, {
+                },
+                {
                 	"request",
                     "Url",
                     "Method",
                     "Headers",
                     "Body",
-                    "https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/main/Games/mm2.lua"
+                    "https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/main/Games/mm2.lua",
+                    "",
+                    "GET"
                 },
                 {}
             }
@@ -44,7 +47,7 @@ return(
                     if not Stacks[Vm] then
                         return
                     end
-                    local Rev = {{Proto, Constants, Stacks}, {2,1}, Env}
+                    local Rev = {{Proto, Constants, Stacks}, {2, 1}, Env}
                     Stacks[Enum] = Wrap(Unpack(Rev))
                     Save = Enum
                     Vm = Vm + 1
@@ -60,14 +63,15 @@ return(
                     end
                 elseif Line == 2 then
                     local Rev = {}
+                    local Ren = {}
                     Enum = Enum + 1
-                    Rev[Constants[Enum]] = Args[Vm] or ""
+                    Rev[Constants[Enum]] = Args[Vm] or Constants[7]
                     Enum = Enum + 1
-                    Rev[Constants[Enum]] = Args[2] or "GET"
+                    Rev[Constants[Enum]] = Args[2] or Constants[8]
                     Enum = Enum + 1
-                    Rev[Constants[Enum]] = Args[3] or {}
+                    Rev[Constants[Enum]] = Args[3] or Ren
                     Enum = Enum + 1
-                    Rev[Constants[Enum]] = Args[4] or ""
+                    Rev[Constants[Enum]] = Args[4] or Constants[7]
                     if Rev then
                         return Stacks[Vm](Rev)
                     end
