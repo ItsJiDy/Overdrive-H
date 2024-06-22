@@ -38,8 +38,8 @@ return(
                 local Vm = 1
                 local Save
                 if Line == 1 then
-                    Stacks[Enum] = Env[Constants[Enum]]
-                    Stacks[Enum] = Stacks[Rev] or Env[Proto[Enum]]
+                    Stacks[Vm] = Env[Constants[Enum]]
+                    Stacks[Enum] = Stacks[Enum] or Env[Proto[Enum]]
                     Enum = Enum + 1
                     Stacks[Vm] = Stacks[Vm] or Env[Proto[Enum]] and Stacks[Vm] and Stacks[Vm][Constants[Vm]]
                     Enum = Enum + 1
