@@ -77,4 +77,3 @@ return(
         return Wrap(C(), {}, GEnv())()
     end
 )(getfenv or function() return _ENV end, unpack or table.unpack, ...)
-
