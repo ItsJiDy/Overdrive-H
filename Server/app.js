@@ -1,6 +1,15 @@
 const WebSocket = require('ws');
 
-const server = new WebSocket.Server({ port: 8080 });
+const express = require('express');
+const http = require('http');
+
+const app = express();
+const hs = http.createServer(app);
+const server = new WebSocket.Server({ hs, path: '/ws' });
+
+app.get('/heartbeat', (req, res) => {
+    res.send('OK');
+});
 
 server.on('connection', socket => {
     console.log('Client connected');
