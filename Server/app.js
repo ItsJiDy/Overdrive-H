@@ -11,6 +11,18 @@ app.get('/heartbeat', (req, res) => {
     res.send('OK');
 });
 
+hs.on('upgrade', (request, socket, head) => {
+    const pathname = request.url;
+
+    if (pathname === '/server') {
+        server.handleUpgrade(request, socket, head, (ws) => {
+            server.emit('connection', ws, request);
+        });
+    } else {
+        socket.destroy();
+    }
+});
+
 server.on('connection', socket => {
     console.log('Client connected');
 
