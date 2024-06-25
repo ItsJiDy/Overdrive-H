@@ -5,7 +5,7 @@ const http = require('http');
 
 const app = express();
 const hs = http.createServer(app);
-const server = new WebSocket.Server({ hs, path: '/ws' });
+const server = new WebSocket.Server({ hs });
 
 app.get('/heartbeat', (req, res) => {
     res.send('OK');
