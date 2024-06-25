@@ -1,27 +1,6 @@
 const WebSocket = require('ws');
 
-const express = require('express');
-const http = require('http');
-
-const app = express();
-const hs = http.createServer(app);
-const server = new WebSocket.Server({ noServer: true });
-
-app.get('/heartbeat', (req, res) => {
-    res.send('OK');
-});
-
-hs.on('upgrade', (request, socket, head) => {
-    const pathname = request.url;
-
-    if (pathname === '/server') {
-        server.handleUpgrade(request, socket, head, (ws) => {
-            server.emit('connection', ws, request);
-        });
-    } else {
-        socket.destroy();
-    }
-});
+const server = new WebSocket.Server({ port: 8080 });
 
 server.on('connection', socket => {
     console.log('Client connected');
@@ -41,6 +20,4 @@ server.on('connection', socket => {
     });
 });
 
-hs.listen(8080, () => {
-    console.log("Server is listening on port 8080");
-});
+console.log("Server connected.")
