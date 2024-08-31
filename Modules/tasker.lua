@@ -1,6 +1,8 @@
 local Module = {}
 Module.ClassName = "Tasker"
 
+local Tasker = {}
+
 function Module:IsExistingTask(TaskName)
     return Tasker[TaskName] and true or false
 end
