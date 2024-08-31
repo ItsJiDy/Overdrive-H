@@ -8,7 +8,7 @@ function Module:IsExistingTask(TaskName)
 end
 
 function Module:MakeTask(TaskName, TaskConnection, TaskCallback)
-    if not self:IsExistingTask(TaskName) and typeof(TaskConnection) == "RBXScriptConnection" then
+    if not self:IsExistingTask(TaskName) then
         Tasker[TaskName] = TaskConnection:Connect(TaskCallback)
     end
 end
