@@ -7,7 +7,7 @@
     "Accept": "Aceptar",
     "Invite": "Invitación",
     "No": "No",
-    "Thanks!": "Gracias!",
+    "Thanks": "Gracias!",
     "Copied": "Copiado",
     "clipboard": "portapapeles",
     "Paste": "Pasta",
@@ -352,5 +352,6 @@
     "The keybind": "La combinación de teclas",
     "is already taken": "ya está en uso.",
     "<font color=\"rgb(0, 255, 0)\">Successfully</font> breaked the gun from <font color=\"rgb(0, 0, 255)\">Sheriff</font>": "<font color=\"rgb(0, 255, 0)\">Con éxito</font> rompió el arma del <font color=\"rgb(0, 0, 255)\">Sheriff</font>",
-    "Script has been successfully loaded in the game, Took <font color=\"rgb(0, 255, 0)\">%.2f</font> seconds to load.": "El script se cargó correctamente en el juego. Tardó <font color=\"rgb(0, 255, 0)\">%.2f</font> segundos en cargarse."
+    "Script has been successfully loaded in the game, Took <font color=\"rgb(0, 255, 0)\">%.2f</font> seconds to load.": "El script se cargó correctamente en el juego. Tardó <font color=\"rgb(0, 255, 0)\">%.2f</font> segundos en cargarse.",
+    "Language Changed! Restart the game to apply changes.": "¡Idioma cambiado! Reinicia el juego para aplicar los cambios."
 }
