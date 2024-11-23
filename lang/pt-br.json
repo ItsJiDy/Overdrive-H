@@ -360,5 +360,6 @@
     "is already taken": "já está em uso.",
     "<font color=\"rgb(0, 255, 0)\">Successfully</font> breaked the gun from <font color=\"rgb(0, 0, 255)\">Sheriff</font>": "<font color=\"rgb(0, 255, 0)\">Com sucesso</font> quebrou a arma do <font color=\"rgb(0, 0, 255)\">Sheriff</font>",
     "Script has been successfully loaded in the game, Took <font color=\"rgb(0, 255, 0)\">%.2f</font> seconds to load.": "O script foi carregado com sucesso no jogo. Levou <font color=\"rgb(0, 255, 0)\">%.2f</font> segundos para carregar.",
-    "Language Changed! Restart the game to apply changes.": "Idioma alterado! Reinicie o jogo para aplicar as alterações."
+    "Language Changed! Restart the game to apply changes.": "Idioma alterado! Reinicie o jogo para aplicar as alterações.",
+    "is already loaded!": "já está carregado!"
 }
