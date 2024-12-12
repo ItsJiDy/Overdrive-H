@@ -356,5 +356,6 @@
     "<font color=\"rgb(0, 255, 0)\">Successfully</font> breaked the gun from <font color=\"rgb(0, 0, 255)\">Sheriff</font>": "<font color=\"rgb(0, 255, 0)\">Con éxito</font> rompió el arma del <font color=\"rgb(0, 0, 255)\">Sheriff</font>",
     "Script has been successfully loaded in the game, Took <font color=\"rgb(0, 255, 0)\">%.2f</font> seconds to load.": "El script se cargó correctamente en el juego. Tardó <font color=\"rgb(0, 255, 0)\">%.2f</font> segundos en cargarse.",
     "Language Changed! Restart the game to apply changes.": "¡Idioma cambiado! Reinicia el juego para aplicar los cambios.",
-    "is already loaded!": "ya está cargado!"
+    "is already loaded!": "ya está cargado!",
+    "Unspectate": "No mirar"
 }
