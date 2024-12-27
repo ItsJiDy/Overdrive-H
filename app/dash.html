@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Overdrive H</title>
+        <style>
+        body {
+            background-image: url("https://i.pinimg.com/originals/55/01/60/5501609ee45d514d1f2c4a63502045e2.gif");
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            overflow-x: hidden;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background-color: rgba(0, 0, 128, 0.3); /* 80% transparent */
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .hamburger {
+            display: block;
+            width: 30px;
+            height: 22px;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 100%;
+            height: 4px;
+            background: #fff;
+            margin: 4px 0;
+            transition: 0.3s;
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background: rgba(0, 0, 128, 0.3); /* 80% transparent */
+            padding: 2rem;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            transition: 0.3s;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar h2 {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .sidebar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+        .sidebar a:hover {
+            color: #007bff;
+        }
+        .sidebar.open {
+            left: 0;
+        }
+        .main {
+            text-align: center;
+            padding: 5rem 1rem;
+            transform: translateY(100px); /* Initially moved down */
+            transition: opacity 0.6s ease, transform 0.6s ease; /* Add transition */
+        }
+        .main img {
+            width: 15%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .main h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .main p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .main a.button {
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            transition: background 0.3s;
+        }
+        .main a.button:hover {
+            background-color: #0056b3;
+        }
+        .main.show {
+            opacity: 1; /* Fade in */
+            transform: translateY(0); /* Move to original position */
+        }
+        footer {
+            text-align: center;
+            background-color: #222;
+            padding: 1.3rem 0;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+                .image-container {
+            margin: 2rem auto;
+            width: 50%;
+            max-width: 600px;
+            background-color: rgba(0, 255, 0, 0.3); /* Dark background */
+            border: 1px solid #555; /* Border */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            overflow: hidden;
+            text-align: center; /* Center-align text */
+            transform: translateY(100px); /* Initially moved down */
+            transition: opacity 0s ease, transform 0.6s ease; /* Add transition */
+            background-transparency: 80%;
+        }
+        
+        .image-container.show {
+            opacity: 1; /* Fade in */
+            transform: translateY(0); /* Move to original position */
+        }
+
+        .image-container img {
+            width: 20%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .image-container .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+            color: #ffffff;
+        }
+
+        .image-container .description {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: #ddd;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                Overdrive H
+            </div>
+            <div class="hamburger" onclick="toggleSidebar()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+        <div class="sidebar" id="sidebar">
+            <h2>Overdrive H</h2> <a href="https://overdrivehub.xyz">Home</a> <a href="https://discord.gg/overdriveh">Join Discord</a>
+        </div>
+        <div class="main" id="v"><img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/fav_icon.png">
+            <h1>Overdrive H</h1>
+            <p>Your #1 powerful semi-legit scripts provider.</p>
+            <h2>Want to try it out?</h2>
+            <h></h>
+            <a href="https://scriptblox.com/script/Universal-Script-Overdrive-H-Lite-21568" class="button">Get Script!</a>
+        </div>
+        <h1>Features:</h1>
+        <div class="image-container" id="secure-container"><img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/secure.png">
+            <div class="title">
+                SECURITY
+            </div>
+            <div class="description">
+                We provides maximum security to ensure your data safe away from spoofers.
+            </div>
+        </div>
+        <div class="image-container" id="mobile-container"><img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/mobile.png">
+            <div class="title">
+                MOBILE
+            </div>
+            <div class="description">
+                Overdrive H are very well made only for mobile but it does supports pc executors such as Argon, Wave, AWP.GG, etc.
+            </div>
+        </div>
+        <div class="image-container" id="code-container"><img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/code.png">
+            <div class="title">
+                PROCESSOR
+            </div>
+            <div class="description">
+                Overdrive H are very optimized so all users can enjoy the script as they can.
+            </div>
+        </div>
+        <footer>
+            <p>© Elf and Tears 2024</p>
+        </footer>
+        <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            if (sidebar.classList.contains('open')) {
+                sidebar.classList.remove('open');
+            } else {
+                sidebar.classList.add('open');
+            }
+        }
+        function fadeAnim(i) {
+                const imageContainer = document.getElementById(i);
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, {
+            threshold: 1 // Trigger the animation when 50% of the element is visible
+        });
+
+        observer.observe(imageContainer);
+        }
+        fadeAnim('v');
+        fadeAnim('secure-container');
+        fadeAnim('mobile-container');
+        fadeAnim('code-container');
+        
+    </script>
+    </body>
+</html>
