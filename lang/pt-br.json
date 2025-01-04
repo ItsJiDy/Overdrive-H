@@ -364,5 +364,6 @@
     "Script has been successfully loaded in the game, Took <font color=\"rgb(0, 255, 0)\">%.2f</font> seconds to load.": "O script foi carregado com sucesso no jogo. Levou <font color=\"rgb(0, 255, 0)\">%.2f</font> segundos para carregar.",
     "Language Changed! Restart the game to apply changes.": "Idioma alterado! Reinicie o jogo para aplicar as alterações.",
     "is already loaded!": "já está carregado!",
-    "Unspectate": "Inespetável"
+    "Unspectate": "Inespetável",
+    "<font color=\"rgb(0, 0, 255)\">Slow down!</font> send again in": "<font color=\"rgb(0, 0, 255)\">Devagar!</font> envie novamente"
 }
