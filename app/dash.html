@@ -16,7 +16,7 @@
             background-color: #000; /* Black background */
             color: #fff; /* White text */
             overflow-x: hidden;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat; /* just to make sure */
             background-size: cover;
         }
         header {
@@ -124,12 +124,11 @@
             font-size: 0.9rem;
             color: #aaa;
         }
-
-                .image-container {
+        .image-container {
             margin: 2rem auto;
             width: 80%;
             max-width: 600px;
-            background-color: rgba(0, 255, 0, 0.3); /* Dark background */
+            background-color: rgba(0, 255, 0, 0.3); /* Dark background and shit */
             border: 1px solid #555; /* Border */
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -141,26 +140,22 @@
             background-transparency: 80%;
             position: center;
         }
-        
         .image-container.show {
             opacity: 1; /* Fade in */
             transform: translateY(0); /* Move to original position */
         }
-
         .image-container img {
             width: 20%;
             height: auto;
             border-radius: 8px;
             margin-bottom: 1rem;
         }
-
         .image-container .title {
             font-size: 1.5rem;
             font-weight: bold;
             margin: 0.5rem 0;
             color: #ffffff;
         }
-
         .image-container .description {
             font-size: 1.2rem;
             line-height: 1.5;
@@ -180,7 +175,7 @@
             </div>
         </header>
         <div class="sidebar" id="sidebar">
-            <h2>Overdrive H</h2> <a href="https://overdrivehub.xyz">Home</a> <a href="https://discord.gg/overdriveh">Join Discord</a>
+            <h2>Overdrive H</h2> <a href="https://overdrivehub.xyz">Home</a> <a href="https://discord.com/invite/dudJwCefnQ">Join Discord</a>
         </div>
         <div class="main" id="v"><img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/fav_icon.png">
             <h1>Overdrive H</h1>
@@ -217,8 +212,8 @@
         <footer>
             <p>© Elf and Tears 2024</p>
         </footer>
-        <script>
-        function toggleSidebar() {
+        <script> // bro i dont know fuck all executors
+        function toggleSidebar() { // open/close thingy
             const sidebar = document.getElementById('sidebar');
             if (sidebar.classList.contains('open')) {
                 sidebar.classList.remove('open');
@@ -226,26 +221,26 @@
                 sidebar.classList.add('open');
             }
         }
-        function fadeAnim(i) {
-                const imageContainer = document.getElementById(i);
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                }
+        function fadeAnim(i) { // idk im dumb
+            const imageContainer = document.getElementById(i);
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show'); /* pizza */
+                    }
+                });
+            }, {
+                threshold: 1 // Trigger the animation when 50% of the element is visible otherwise it'll bug out :clown:
             });
-        }, {
-            threshold: 1 // Trigger the animation when 50% of the element is visible
-        });
-
-        observer.observe(imageContainer);
-        }
+            observer.observe(imageContainer);
+        } // fuck this shit
         fadeAnim('v');
         fadeAnim('secure-container');
         fadeAnim('mobile-container');
         fadeAnim('code-container');
-        
+        -- fadeAnim('gay-container');
+
+        /* i am suck at explaining things so don't fucking attack me in discord you got it? */
     </script>
     </body>
 </html>
