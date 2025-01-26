@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c48229bf42a0eb230f66b0d10423e7ae.lua"))()
+loadstring(game:HttpGet("https://cdn.luarmor.net/verified/ODH_BLADE_BALL_LITE.lua"))()
