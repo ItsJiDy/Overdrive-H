@@ -187,7 +187,7 @@
             padding: 1rem;
             overflow: hidden;
             text-align: center; /* Center-align text */
-            transition: box-shadow 1s ease;
+            transition: transform 1s ease, box-shadow 1s ease;
             background-transparency: 80%;
             position: center;
             opacity: 0;
@@ -240,13 +240,12 @@
             padding: 1rem;
             overflow: hidden;
             text-align: center; /* Center-align text */
-            transition: box-shadow 1s ease;
+            transition: transform 1s ease, box-shadow 1s ease;
             background-transparency: 80%;
             position: center;
             opacity: 0;
         }
         .image-container2:hover {
-            transform: scale(0.2);
             box-shadow: 0 0 15px 5px rgba(0, 0, 255, 0.8);
         }
         .image-container2.show {
@@ -287,7 +286,8 @@
     <body>
         <div class="all">
             <div class="top-bar">
-                <div class="left-side"><img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/fav_icon.png" alt="Logo" class="logo"> <!-- Replace with your logo -->
+                <div class="left-side">
+                    <img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/fav_icon.png" alt="Logo" class="logo"> <!-- Replace with your logo -->
                     <div class="title">
                         Overdrive H
                     </div>
@@ -297,12 +297,12 @@
                 </div>
             </div>
             <div class="menu-container" id="menuContainer">
-                <div class="menu-items"><a href="https://overdrivehub.xyz/">Home</a> <a href="https://discord.gg/dudJwCefnQ">Discord</a>
+                <div class="menu-items">
+                    <a href="#">Home</a> <a href="#">Discord</a>
                 </div>
             </div>
         </div>
-        <div class="main" id="v">
-            <img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/fav_icon.png">
+        <div class="main" id="v"><img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/fav_icon.png">
             <h1>Overdrive H</h1>
             <p>Your #1 powerful semi-legit scripts provider, verified &amp; trusted by many.</p>
             <h2>Want to try it out?</h2> <h></h> <a href="https://rscripts.net/script/overdrive-h-full-5bZ3" class="button">Get Script!</a>
@@ -311,8 +311,7 @@
             <h1>Features</h1>
         </div>
         <div class="containers">
-            <div class="image-container" id="secure-container">
-                <img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/shield.png">
+            <div class="image-container" id="secure-container"><img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/shield.png">
                 <div class="title">
                     Safety
                 </div>
@@ -320,8 +319,7 @@
                     Overdrive H is safe to use and we provides maximum security to ensure your data safe away from spoofers.
                 </div>
             </div>
-            <div class="image-container" id="mobile-container">
-                <img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/key.png">
+            <div class="image-container" id="mobile-container"><img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/key.png">
                 <div class="title">
                     Key System
                 </div>
@@ -330,8 +328,7 @@
                 </div>
             </div>
         </div>
-        <div class="image-container" id="code-container">
-            <img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/ui.png">
+        <div class="image-container" id="code-container"><img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/ui.png">
             <div class="title">
                 UI
             </div>
@@ -343,8 +340,7 @@
             <h1>Frequently Asked Questions</h1>
         </div>
         <div class="containers">
-            <div class="image-container" id="q1-container">
-                <img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/question_mark.png">
+            <div class="image-container" id="q1-container"><img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/question_mark.png">
                 <div class="title">
                     What is Overdrive H?
                 </div>
@@ -352,8 +348,7 @@
                     Overdrive H is a script that allows you to modified things in game.
                 </div>
             </div>
-            <div class="image-container" id="q2-container">
-                <img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/question_mark.png">
+            <div class="image-container" id="q2-container"><img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/question_mark.png">
                 <div class="title">
                     Does Overdrive H requires a key to get access?
                 </div>
@@ -361,8 +356,7 @@
                     Yes, Overdrive H has key system to get access in order for the owner to earn some money.
                 </div>
             </div>
-            <div class="image-container" id="q3-container">
-                <img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/question_mark.png">
+            <div class="image-container" id="q3-container"><img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/question_mark.png">
                 <div class="title">
                     Is Overdrive H safe to use?
                 </div>
@@ -370,8 +364,7 @@
                     Yes, Overdrive H is very safe to use and it is verified.
                 </div>
             </div>
-            <div class="image-container" id="q4-container">
-                <img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/question_mark.png">
+            <div class="image-container" id="q4-container"><img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/question_mark.png">
                 <div class="title">
                     In which executor does Overdrive H works?
                 </div>
@@ -379,17 +372,15 @@
                     Depends on the executor that has every needed functions to run Overdrive H.
                 </div>
             </div>
-            <div class="image-container" id="q5-container">
-                <img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/question_mark.png">
+            <div class="image-container" id="q5-container"><img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/question_mark.png">
                 <div class="title">
                     Is Overdrive H optimized?
                 </div>
                 <div class="description">
-                    Yes, Overdrive H is very optimized to any devices.
+                    Yes, Overdrive H is very optimized.
                 </div>
             </div>
-            <div class="image-container" id="q6-container">
-                <img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/question_mark.png">
+            <div class="image-container" id="q6-container"><img src="https://raw.githubusercontent.com/ItsJiDy/Overdrive-H/refs/heads/main/images/question_mark.png">
                 <div class="title">
                     What are the Premium benefits?
                 </div>
@@ -401,8 +392,7 @@
         <div class="centerhead" id="d">
             <h1>Developer</h1>
         </div>
-        <div class="image-container2" id="developer-container">
-            <img id="dev-icon">
+        <div class="image-container2" id="developer-container"><img id="dev-icon">
             <div class="title" id="dev-name">
                 NOT FOUND
             </div>
@@ -448,16 +438,30 @@
                 menuContainer.classList.remove("expand");
             }
         };
-        function fadeAnim(i) { // idk im dumb
+        function fadeAnim(i) {
             const imageContainer = document.getElementById(i);
+            if (!imageContainer) return;
+                    imageContainer.addEventListener("mouseenter", function() {
+            imageContainer.style.transform = "translateY(-10px) scale(1.015)"; // Move up and scale up
+        });
+
+        imageContainer.addEventListener("mouseleave", function() {
+            imageContainer.style.transform = "translateY(0) scale(1)"; // Reset position and scale
+        });
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('show'); /* pizza */
+                        entry.target.classList.add('show');
+                        entry.target.addEventListener("animationend", () => {
+                            entry.target.style.opacity = 1;
+                           entry.target.classList.remove('show')
+                            entry.target.style.transform = "translateY(0px)"
+                        }, { once: true });
+                        observer.unobserve(entry.target); // Stop observing after animation
                     }
                 });
             }, {
-                threshold: 1 // Trigger the animation when 50% of the element is visible otherwise it'll bug out :clown:
+                threshold: 0.3 // Trigger earlier
             });
             observer.observe(imageContainer);
         }
